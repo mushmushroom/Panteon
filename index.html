@@ -34,19 +34,19 @@
       <nav class="menu__body">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".section1" href="#">Про нас</a>
+            <a class="menu__link active" data-goto=".about" href="#">Про нас</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".section1" href="#">Галерея</a>
+            <a class="menu__link active" data-goto=".gallery" href="#">Галерея</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".section1" href="#">Абонементи</a>
+            <a class="menu__link active" data-goto=".membership" href="#">Абонементи</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".section1" href="#">Тренери</a>
+            <a class="menu__link active" data-goto=".trainers" href="#">Тренери</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".section1" href="#">Контакти</a>
+            <a class="menu__link active" data-goto=".contact" href="#">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +65,7 @@
             <div class="hero__text">
               Краще нас тільки боги
             </div>
-            <a class="hero__btn btn btn--fancy" href="#"><span>Отримати консультацію</span></a>
+            <a class="hero__btn btn btn--fancy" data-goto=".contact-form" href="#"><span>Отримати консультацію</span></a>
 
           </div>
           <div class="hero__bottom">
@@ -112,7 +112,7 @@
                 особливим, а формат наших тренувань дозволить вам розкрити потенціал вашого тіла на 100%.
               </p>
             </div>
-            <a class="btn about__btn" href="#"><span>Отримати консультацію</span></a>
+            <a class="btn about__btn" data-goto=".contact-form" href="#"><span>Отримати консультацію</span></a>
           </div>
         </div>
 
@@ -248,73 +248,77 @@
             </tr>
           </tbody>
         </table>
-        <h3 class="membership__subtitle">Абонемент по часу</h3>
-        <table class="membership__table membership__time-table">
-          <thead>
-            <tr>
-              <th scope="row">Тип карти</th>
-              <th> 12 місяців</th>
-              <th><mark>6 місяців</mark></th>
-              <th>3 місяці</th>
-              <th>1 місяць</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row"><mark>Індивідуальна,
-                  повна без обмежень
-                  в відвідуванні / <span>8:00 – 23:00</span></mark></th>
-              <td>18000
-                <br>(+200 хв. солярій)</td>
-              <td><b>12000</b></td>
-              <td>7000</td>
-              <td>
-                2500
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Індивідуальна,
-                денна / <span>8:00 – 17:00</span></th>
-              <td>—</td>
-              <td>9500</td>
-              <td>5500</td>
-              <td>2000</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="membership__time-wrapper">
+          <h3 class="membership__subtitle">Абонемент по часу</h3>
+          <table class="membership__table membership__time-table">
+            <thead>
+              <tr>
+                <th scope="row">Тип карти</th>
+                <th> 12 місяців</th>
+                <th><mark>6 місяців</mark></th>
+                <th>3 місяці</th>
+                <th>1 місяць</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><mark>Індивідуальна,
+                    повна без обмежень
+                    в відвідуванні / <span>8:00 – 23:00</span></mark></th>
+                <td>18000
+                  <br>(+200 хв. солярій)</td>
+                <td><b>12000</b></td>
+                <td>7000</td>
+                <td>
+                  2500
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Індивідуальна,
+                  денна / <span>8:00 – 17:00</span></th>
+                <td>—</td>
+                <td>9500</td>
+                <td>5500</td>
+                <td>2000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <h3 class="membership__subtitle">Разові тренування</h3>
-        <div class="membership__one">
-          <div class="membership__item">
-            <div class="membership__type">Самостійні тренування в тренажерному залі</div>
-            <div class="membership__time">8:00 – 23:00</div>
-            <div class="membership__body">
-              <img class="membership__icon" src="images/gym-icon.svg" alt="Icon" width="35" height="34">
-              <div class="membership__price">250грн</div>
-              <div class="membership__quantity">1 тренування</div>
-              <a class="membership__btn btn btn--accent" href="#"><span>Дізнатися</span></a>
+        <div class="membership__one-wrapper">
+          <h3 class="membership__subtitle">Разові тренування</h3>
+          <div class="membership__one">
+            <div class="membership__item">
+              <div class="membership__type">Самостійні тренування в тренажерному залі</div>
+              <div class="membership__time">8:00 – 23:00</div>
+              <div class="membership__body">
+                <img class="membership__icon" src="images/gym-icon.svg" alt="Icon" width="35" height="34">
+                <div class="membership__price">250грн</div>
+                <div class="membership__quantity">1 тренування</div>
+                <a class="membership__btn btn btn--accent" href="#"><span>Дізнатися</span></a>
+              </div>
             </div>
-          </div>
-          <div class="membership__item">
-            <div class="membership__type">Персональний тренинг
-              з інструктором</div>
-            <div class="membership__time">8:00 – 23:00</div>
-            <div class="membership__body">
-              <img class="membership__icon" src="images/gym-icon.svg" alt="Icon" width="35" height="34">
-              <div class="membership__price">700грн</div>
-              <div class="membership__quantity">1 тренування</div>
-              <a class="membership__btn btn btn--accent" href="#"><span>Дізнатися</span></a>
+            <div class="membership__item">
+              <div class="membership__type">Персональний тренинг
+                з інструктором</div>
+              <div class="membership__time">8:00 – 23:00</div>
+              <div class="membership__body">
+                <img class="membership__icon" src="images/gym-icon.svg" alt="Icon" width="35" height="34">
+                <div class="membership__price">700грн</div>
+                <div class="membership__quantity">1 тренування</div>
+                <a class="membership__btn btn btn--accent" href="#"><span>Дізнатися</span></a>
+              </div>
             </div>
-          </div>
-          <div class="membership__item">
-            <div class="membership__type">Зал групових програм</div>
-            <div class="membership__time">розклад занять уточнюйте у адміністратора</div>
-            <div class="membership__body">
-              <img class="membership__icon" src="images/gym-icon.svg" alt="Icon" width="35" height="34">
-              <div class="membership__price">300грн</div>
+            <div class="membership__item">
+              <div class="membership__type">Зал групових програм</div>
+              <div class="membership__time">розклад занять уточнюйте у адміністратора</div>
+              <div class="membership__body">
+                <img class="membership__icon" src="images/gym-icon.svg" alt="Icon" width="35" height="34">
+                <div class="membership__price">300грн</div>
 
-              <div class="membership__quantity">1 тренування</div>
-              <a class="membership__btn btn btn--accent" href="#"><span>Дізнатися</span></a>
+                <div class="membership__quantity">1 тренування</div>
+                <a class="membership__btn btn btn--accent" href="#"><span>Дізнатися</span></a>
+              </div>
             </div>
           </div>
         </div>
@@ -511,39 +515,39 @@
         <div class="footer__menu">
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
-              <a href="#">
+              <a data-goto=".about" class="footer__menu-link" href="#">
                 Про нас
               </a>
             </li>
             <li class="footer__menu-item">
-              <a href="#">
+              <a data-goto=".gallery" class="footer__menu-link" href="#">
                 Галерея
               </a>
             </li>
             <li class="footer__menu-item">
-              <a href="#">
+              <a data-goto=".trainers" class="footer__menu-link" href="#">
                 Тренери
               </a>
             </li>
             <li class="footer__menu-item">
-              <a href="#">
+              <a data-goto=".contact" class="footer__menu-link" href="#">
                 Контакти
               </a>
             </li>
           </ul>
           <div class="footer__membership">
             <div class="footer__membership-item">
-              <a href="#">
+              <a data-goto=".membership" class="footer__menu-link" href="#">
                 Абонементи
               </a>
             </div>
             <div class="footer__membership-item">
-              <a href="#">
+              <a data-goto=".membership__time-wrapper" class="footer__menu-link" href="#">
                 Абонемент по часу
               </a>
             </div>
             <div class="footer__membership-item">
-              <a href="#">
+              <a data-goto=".membership__one-wrapper" class="footer__menu-link" href="#">
                 Разові тренування
               </a>
             </div>
