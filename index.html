@@ -34,24 +34,24 @@
       <nav class="menu__body">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".about" href="#">Про нас</a>
+            <a class="menu__link" data-target="about" data-goto=".about" href="#">Про нас</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".gallery" href="#">Галерея</a>
+            <a class="menu__link" data-target="gallery" data-goto=".gallery" href="#">Галерея</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".membership" href="#">Абонементи</a>
+            <a class="menu__link" data-target="membership" data-goto=".membership" href="#">Абонементи</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".trainers" href="#">Тренери</a>
+            <a class="menu__link" data-target="trainers" data-goto=".trainers" href="#">Тренери</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link active" data-goto=".contact" href="#">Контакти</a>
+            <a class="menu__link" data-target="contact" data-goto=".contact" href="#">Контакти</a>
           </li>
         </ul>
       </nav>
 
-      <a class="menu__link menu__contact-link" data-da=".menu__body,768"  href="tel:380504161916">+38 (050)
+      <a class="menu__link menu__contact-link" data-da=".menu__body,768" href="tel:380504161916">+38 (050)
         416-19-16</a>
     </div>
   </div>
@@ -100,7 +100,7 @@
       </div>
     </section>
 
-    <section class="about">
+    <section id="about" class="about" data-watch>
       <div class="container">
         <div class="about__content">
           <div class="about__images">
@@ -143,7 +143,7 @@
       </div>
     </section>
 
-    <section class="gallery">
+    <section id="gallery" class="gallery" data-watch>
       <div class="container container--wide">
         <h2 class="title title--white gallery__title">Галерея</h2>
         <div class="gallery__wrapper">
@@ -191,7 +191,7 @@
       </div>
     </section>
 
-    <section class="membership">
+    <section id="membership" class="membership" data-watch>
       <div class="container">
         <h2 class="membership__title title">Абонементи</h2>
         <table class="membership__table">
@@ -332,7 +332,7 @@
       </div>
     </section>
 
-    <section class="trainers">
+    <section id="trainers" class="trainers" data-watch>
       <div class="container container--wide">
         <div class="trainers__inner">
           <h2 class="trainers__title title">Тренери </h2>
@@ -438,7 +438,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact" data-watch>
       <div id="map" class="contact__inner">
       </div>
       <div class="container contact__container">
@@ -607,7 +607,7 @@
 
 
     <script src="js/main.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY"></script> -->
 </body>
 
 </html>
